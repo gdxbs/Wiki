@@ -51,9 +51,8 @@ const navigate = useNavigate(); //using navigate hook to navigate to home page a
 
    {articles?.map((article) => (
      <div key={article.article_id}
-     onClick={() => {navigate(`/wikipageuser/${article.article_id}`)}}
-
-     className='w-full rounded-md border-2 border-black mt-20 flex justify-center  items-center p-20 flex-col'>
+      onClick={() => {navigate(`/wikipageuser/${article.article_id}`)}}
+      className='w-full rounded-md border-2 border-black mt-20 flex justify-center cursor-pointer items-center p-20 flex-col'>
         <h2 className='text-5xl font-bold text-center'>{article.title}</h2>
         <h2 className='text-2xl font-bold text-center'>Creator: {article.creator_name}</h2>
         </div>
